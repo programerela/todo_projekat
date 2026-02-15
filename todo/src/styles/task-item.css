@@ -1,0 +1,31 @@
+.task-item {
+    display: flex;
+    align-items: center;
+    padding: 14px 18px;
+    border-bottom: 1px solid #ccc;
+    transition: background-color 0.15s ease, transform 0.3s ease;
+}
+
+.task-item:hover {
+    background-color: #f9f9f9;
+    transform: translateX(4px);
+}
+
+.task-item-left {
+    display: flex;
+    align-items: center;
+    gap: 14px; 
+}
+
+.task-checkbox {
+    width: 18px;
+    height: 18px;
+    border: 2px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.task-text {
+    font-size: 16px;
+    color: #333;
+}
