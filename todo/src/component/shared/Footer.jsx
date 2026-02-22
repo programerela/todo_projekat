@@ -1,1 +1,7 @@
-export default function Footer() {}
+export default function Footer() {
+    return (
+        <footer className="footer">
+            <p>&copy; 2026 ToDo App. All rights reserved.</p>
+        </footer>
+    );
+}
