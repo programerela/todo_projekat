@@ -1,4 +1,5 @@
 import "../../styles/navbar.css";
+import { Link } from "react-router";
 
 function Navbar() {
   return (
@@ -15,7 +16,7 @@ function Navbar() {
         </ul>
 
         <div className="navbar-actions">
-          <button className="navbar-btn">Get Started</button>
+          <Link to="/login" className="navbar-btn">Get Started</Link>
         </div>
       </div>
     </nav>

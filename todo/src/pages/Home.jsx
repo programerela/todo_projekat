@@ -1,4 +1,5 @@
 import "../styles/home.css";
+import { Link } from "react-router";
 
 function Home() {
   return (
@@ -15,7 +16,7 @@ function Home() {
           and take meaningful breaks.
         </p>
 
-        <button className="hero-btn">Start organizing</button>
+        <Link to="/login" className="hero-btn">Start organizing</Link>
       </section>
 
       <section className="features">

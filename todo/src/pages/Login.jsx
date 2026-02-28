@@ -1,3 +1,6 @@
+import "../styles/login.css";
+import { Link } from "react-router";
+
 export default function Login() {
     return (
         <div className="auth-page">
@@ -12,7 +15,7 @@ export default function Login() {
                 </form>
 
                 <div className="auth-footer">
-                    <span>Don't have an account? <a href="/register">Sign up</a></span>
+                    <span>Don't have an account? <Link to="/register">Sign up</Link></span>
                 </div>
             </div>
         </div>

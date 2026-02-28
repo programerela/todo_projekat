@@ -1,4 +1,5 @@
 import "../styles/register.css";
+import { Link } from "react-router";
 
 function Register() {
     return(
@@ -15,7 +16,7 @@ function Register() {
                 </form>
 
                 <div className="auth-footer">
-                    Already have an account? <a href="/login">Log in</a>
+                    Already have an account? <Link to="/login">Log in</Link>
                 </div>
             </div>
         </div>
