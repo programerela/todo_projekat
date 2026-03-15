@@ -5,13 +5,17 @@ import {
   useLocation,
 } from "react-router-dom";
 
-import Homepage from "./pages/Home.jsx";
+import { AuthProvider } from "./context/AuthContext.jsx";
+
 import Navbar from "./component/shared/Navbar.jsx";
+
+import Homepage from "./pages/Home.jsx";
 import MyTasks from "./pages/MyTasks.jsx";
 import Footer from "./component/shared/Footer.jsx";
 import Login from "./pages/Login.jsx";
 import Register from "./pages/Register.jsx";
 
+// ElaHAJDEBrate
 function AppContent() {
   const location = useLocation();
 
@@ -38,9 +42,11 @@ function AppContent() {
 
 function App() {
   return (
-    <Router>
-      <AppContent />
-    </Router>
+    <AuthProvider>
+      <Router>
+        <AppContent />
+      </Router>
+    </AuthProvider>
   );
 }
 
